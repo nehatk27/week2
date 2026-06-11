@@ -1,0 +1,76 @@
+:root {
+  --color-primary: #003747;
+  --color-secondary: #006a8a;
+  --color-accent: #c4f1ff;
+  --color-success: #2e7d32;
+  --color-warning: #ffeb3b;
+  --color-error: #c62828;
+  --color-text: #04171a;
+  --color-bg: rgb(255, 249, 239);
+  /* slide the picker straight up for tints(lighter variations) or straight down for shades(darker variations). */
+  --color-tint-one: #00465c;
+  --color-tint-two: #046d8d;
+  --color-tint-three: #246f86;
+  --color-tint-four: #04b3e9;
+  --color-tint-five: #05c5ff;
+  --color-shade-one: #01303f;
+  --color-shade-two: #002530;
+  --color-shade-three: #001e27;
+  --color-shade-four: #01161d;
+  --color-shade-five: #000303;
+
+  --color-primary-rgb: rgb(0, 55, 71);
+  --color-primary-hsl: hsl(194°, 100%, 14%);
+  --color-primary-oklch: oklch(0.3129 0.0588 224.05);
+}
+
+[data-theme='dark']{
+    --color-primary:#102c1d;
+    --color-error:#101a11;
+}
+
+*{
+    background-color: var(--color-bg);
+}
+h1{
+    color: var(--color-primary);
+}
+
+h2{
+    color: var(--color-secondary);
+}
+
+h3{
+    color: var(--color-tint-two);
+}
+p{
+    color: var(--color-text);
+}
+
+a{
+    color: var(--color-error);
+}
+
+small{
+    color: var(--color-success);
+    margin:20px 45%;
+}
+
+blockquote small{
+    color: var(--color-shade-one);
+}
+
+.desc-para{
+    color: var(--color-shade-four);
+}
+
+a:hover{
+    color: var(--color-warning);
+}
+
+#testimonials{
+    background-color: var(--color-accent);
+    margin: 20px 30%;
+    padding-bottom: 10px;
+}
+

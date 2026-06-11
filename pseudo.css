@@ -1,0 +1,68 @@
+a {
+  color: blue;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* :hover triggers when the mouse cursor simply hovers over the element.  */
+/* :focus-visible only targets focused elements when the browser detects that a visible indicator is necessary (usually during keyboard navigation) */
+
+a:focus-visible {
+  color: brown;
+}
+
+.custom-checkbox {
+  appearance: none;
+  margin: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-left: 28px;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid rgb(138, 138, 138);
+}
+
+.custom-checkbox:checked + label::before {
+  background: #ffee00;
+  content: ":)";
+}
+
+ol {
+  counter-reset: list;
+}
+
+.list-class {
+  counter-increment: list;
+}
+
+.list-class::before {
+  content: "Day" counter(list) ": ";
+}
+
+
+.tooltip{
+    display: inline-block;
+    background-color: #ffee00;
+    cursor:pointer;
+}
+
+.tooltip-text{
+    visibility: hidden;
+}
+
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+}

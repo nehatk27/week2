@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:wght@100..900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+#text-1_2 {
+  font-size: 1.2rem;
+}
+
+#text-1_4 {
+  font-size: 1.4rem;
+}
+
+#text-1_6 {
+  font-size: 1.6rem;
+}
+
+#text-1_8 {
+  font-size: 1.8rem;
+}
+
+#text-2_0 {
+  font-size: 2rem;
+}
+
+#text-2_4 {
+  font-size: 2.4rem;
+}
+
+#text-3_0 {
+  font-size: 3rem;
+}
+
+#text-3_6 {
+  font-size: 3.6rem;
+}
+
+#text-4_8 {
+  font-size: 4.8rem;
+}
+
+#text-6_0 {
+  font-size: 6rem;
+}
+
+.cormorant-garamond-headings {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-100 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-300 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-500 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-600 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.montserrat-para-50 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: italic;
+  font-size: 2.4rem;
+}
+
+.truncate-text {
+  line-height: 1.5;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

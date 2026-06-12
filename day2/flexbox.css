@@ -1,0 +1,372 @@
+.flex-start {
+  width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+}
+
+#main-div1 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+}
+
+#main-div2 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center {
+  width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+}
+
+#main-div3 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  display: flex;
+  justify-content: center;
+}
+
+.space-between {
+  width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+}
+
+#main-div4 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-around {
+  width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+}
+
+#main-div5 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.space-evenly {
+  width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+}
+
+#main-div6 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* -----------------Align-items----------------- */
+
+.stretch-items {
+  width: 100px;
+  height: 100px;
+  background: #4749a3;
+  border: 1px solid black;
+}
+
+#main-div7 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #b4b4df;
+  border: 1px dashed blue;
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-start-items {
+  width: 100px;
+  height: 100px;
+  background: #4749a3;
+  border: 1px solid black;
+}
+
+#main-div8 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #b4b4df;
+  border: 1px dashed blue;
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-end-items {
+  width: 100px;
+  height: 100px;
+  background: #4749a3;
+  border: 1px solid black;
+}
+
+#main-div9 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #b4b4df;
+  border: 1px dashed blue;
+  display: flex;
+  align-items: flex-end;
+}
+
+.center-items {
+  width: 100px;
+  height: 100px;
+  background: #4749a3;
+  border: 1px solid black;
+}
+
+#main-div10 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #b4b4df;
+  border: 1px dashed blue;
+  display: flex;
+  align-items: center;
+}
+
+.baseline-items {
+  width: 100px;
+  height: 100px;
+  background: #4749a3;
+  border: 1px solid black;
+}
+
+#main-div11 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #b4b4df;
+  border: 1px dashed blue;
+  display: flex;
+  align-items: baseline;
+}
+
+/* -----------align-content------- */
+
+.flex-start-content {
+  width: 120px;
+  height: 120px;
+  background: #4b9e75;
+  border: 1px solid black;
+}
+
+#main-div12 {
+  width: 1600px;
+  height: 260px;
+  margin: 20px;
+  background: #94d6b5;
+  border: 1px dashed green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.flex-end-content {
+  width: 120px;
+  height: 120px;
+  background: #4b9e75;
+  border: 1px solid black;
+}
+
+#main-div13 {
+  width: 1600px;
+  height: 260px;
+  margin: 20px;
+  background: #94d6b5;
+  border: 1px dashed green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.center-content {
+  width: 120px;
+  height: 120px;
+  background: #4b9e75;
+  border: 1px solid black;
+}
+
+#main-div14 {
+  width: 1600px;
+  height: 260px;
+  margin: 20px;
+  background: #94d6b5;
+  border: 1px dashed green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.space-between-content {
+  width: 120px;
+  height: 120px;
+  background: #4b9e75;
+  border: 1px solid black;
+}
+
+#main-div15 {
+  width: 1600px;
+  height: 260px;
+  margin: 20px;
+  background: #94d6b5;
+  border: 1px dashed green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.space-around-content {
+  width: 120px;
+  height: 120px;
+  background: #4b9e75;
+  border: 1px solid black;
+}
+
+#main-div16 {
+  width: 1600px;
+  height: 260px;
+  margin: 20px;
+  background: #94d6b5;
+  border: 1px dashed green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.stretch-content {
+  width: 120px;
+  height: 120px;
+  background: #4b9e75;
+  border: 1px solid black;
+}
+
+#main-div17 {
+  width: 1600px;
+  height: 260px;
+  margin: 20px;
+  background: #94d6b5;
+  border: 1px dashed green;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+/* -----------flex-direction------- */
+
+.row {
+  width: 100px;
+  height: 100px;
+  background: #b4b366;
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+#main-div18 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #f1f1cc;
+  border: 1px dashed brown;
+  display: flex;
+  flex-direction: row;
+}
+
+.row-reverse {
+  width: 100px;
+  height: 100px;
+  background: #b4b366;
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+#main-div19 {
+  width: 1000px;
+  height: 120px;
+  margin: 10px;
+  background: #f1f1cc;
+  border: 1px dashed brown;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.column {
+  width: 100px;
+  height: 100px;
+  background: #b4b366;
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+#main-div20 {
+  width: 120px;
+  height: 980px;
+  margin: 10px;
+  background: #f1f1cc;
+  border: 1px dashed brown;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-reverse {
+  width: 100px;
+  height: 100px;
+  background: #b4b366;
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+#main-div21 {
+  width: 120px;
+  height: 980px;
+  margin: 10px;
+  background: #f1f1cc;
+  border: 1px dashed brown;
+  display: flex;
+  flex-direction: column-reverse;
+}

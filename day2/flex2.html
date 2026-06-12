@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Task 2</title>
+    <link rel="stylesheet" href="flex2.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Flex Grow</h1>
+      <div id="main-div1">
+        <div class="row1" id="box1">1</div>
+        <div class="row1" id="box2">2</div>
+        <div class="row1" id="box3">3</div>
+        <div class="row1" id="box4">4</div>
+        <div class="row1" id="box5">5</div>
+      </div>
+
+      <h1>Flex Shrink</h1>
+      <div id="main-div2">
+        <div class="row2" id="box6">1 shrink=0</div>
+        <div class="row2" id="box7">2 shrink=1</div>
+        <div class="row2" id="box8">3 shrink=4</div>
+        <div class="row2" id="box9">4 shrink=3</div>
+        <div class="row2" id="box10">5 shrink=2</div>
+      </div>
+      <p>
+        It shows how much a flex item will shrink relative to the rest of the
+        items in a container when the available space is smaller than the total
+        size of the items.
+      </p>
+
+      <h1>Flex Basis</h1>
+      <div id="main-div3">
+        <div class="row3" id="box11">1 basis=0</div>
+        <div class="row3" id="box12">2 basis=auto</div>
+        <div class="row3" id="box13">3 basis=200px</div>
+        <div class="row3" id="box14">4 basis=33.333%</div>
+      </div>
+      <p>Width controls the horizontal size regardless of layout direction.</p>
+      <p>
+        flex-basis sets the initial starting size of a flex item along the width
+        in a row layout and height in a column layout before extra space is
+        distributed or shrinking occurs.
+      </p>
+
+      <h1>Order</h1>
+      <div id="main-div4">
+        <div class="row4" id="box15">Box 1, Order=5</div>
+        <div class="row4" id="box16">Box 2, Order=1</div>
+        <div class="row4" id="box17">Box 3, Order=3</div>
+        <div class="row4" id="box18">Box 4, Order=2</div>
+        <div class="row4" id="box19">Box 5, Order=4</div>
+      </div>
+
+      <h1>Align-Self</h1>
+      <div id="main-div5">
+        <div class="row5" id="box20">Box1 align-self=flex-end</div>
+        <div class="row5" id="box21">Box2 align-self=auto</div>
+        <div class="row5" id="box22">Box3 align-self=center</div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+/* =========== flex-grow ========== */
+
+.row1 {
+  min-width: 100px;
+  height: 100px;
+  background: #b37f7f;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-div1 {
+  width: 1000px;
+  display: flex;
+  background: #e7e0d8;
+  border: 1px dashed blue;
+  justify-content: center;
+}
+
+#box1 {
+  flex-grow: 0;
+}
+
+#box2 {
+  flex-grow: 1;
+}
+
+#box3 {
+  flex-grow: 2;
+}
+
+#box4 {
+  flex-grow: 1;
+}
+
+#box5 {
+  flex-grow: 0;
+}
+
+/* =========== flex-shrink ========== */
+
+.row2 {
+  width: 100px;
+  height: 100px;
+  background: #6c9952;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-div2 {
+  width: 400px;
+  display: flex;
+  background: #e7e0d8;
+  margin: 20px;
+  border: 1px dashed blue;
+  justify-content: center;
+}
+
+#box6 {
+  flex-shrink: 1;
+}
+
+#box7 {
+  flex-shrink: 0;
+}
+
+#box8 {
+  flex-shrink: 4;
+}
+
+#box9 {
+  flex-shrink: 3;
+}
+
+#box10 {
+  flex-shrink: 2;
+}
+
+/* =========== flex-basis ========== */
+
+.row3 {
+  height: 100px;
+  background: #6c9952;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-div3 {
+  width: 800px;
+  display: flex;
+  background: #e7e0d8;
+  margin: 20px;
+  border: 1px dashed blue;
+}
+
+#box11 {
+  flex-basis: 0;
+}
+
+#box12 {
+  flex-basis: auto;
+}
+
+#box13 {
+  flex-basis: 200px;
+}
+
+#box14 {
+  flex-basis: 33.333%;
+}
+
+/* =========== order ========== */
+
+.row4 {
+  width: 100px;
+  height: 100px;
+  background: #6c9952;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-div4 {
+  width: 800px;
+  display: flex;
+  background: #e7e0d8;
+  margin: 20px;
+  border: 1px dashed blue;
+}
+
+#box15 {
+  order: 5;
+}
+
+#box16 {
+  order: 1;
+}
+
+#box17 {
+  order: 3;
+}
+
+#box18 {
+  order: 2;
+}
+#box19 {
+  order: 4;
+}
+
+/* =========== Align-self ========== */
+
+.row5 {
+  width: 100px;
+  height: 100px;
+  background: #6c9952;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-div5 {
+  width: 800px;
+  height: 150px;
+  display: flex;
+  background: #e7e0d8;
+  margin: 20px;
+  border: 1px dashed blue;
+}
+
+#box20 {
+  align-self: flex-end;
+}
+
+#box21 {
+  align-self: auto;
+}
+
+#box22 {
+  align-self: center;
+}

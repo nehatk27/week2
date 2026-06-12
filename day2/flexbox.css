@@ -113,7 +113,7 @@
   width: 1000px;
   height: 120px;
   margin: 10px;
-  background: #b4b4df;
+  background: #f0f0ff;
   border: 1px dashed blue;
   display: flex;
   align-items: stretch;
@@ -130,7 +130,7 @@
   width: 1000px;
   height: 120px;
   margin: 10px;
-  background: #b4b4df;
+  background: #f0f0ff;
   border: 1px dashed blue;
   display: flex;
   align-items: flex-start;
@@ -147,7 +147,7 @@
   width: 1000px;
   height: 120px;
   margin: 10px;
-  background: #b4b4df;
+  background: #f0f0ff;
   border: 1px dashed blue;
   display: flex;
   align-items: flex-end;
@@ -164,7 +164,7 @@
   width: 1000px;
   height: 120px;
   margin: 10px;
-  background: #b4b4df;
+  background: #f0f0ff;
   border: 1px dashed blue;
   display: flex;
   align-items: center;
@@ -181,7 +181,7 @@
   width: 1000px;
   height: 120px;
   margin: 10px;
-  background: #b4b4df;
+  background: #f0f0ff;
   border: 1px dashed blue;
   display: flex;
   align-items: baseline;

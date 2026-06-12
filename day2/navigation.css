@@ -1,0 +1,95 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: azure;
+  container-type: scroll-state;
+}
+
+@container scroll-state(stuck: top) {
+  nav {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  flex: 1;
+  margin: 10px 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: teal;
+  outline: none;
+}
+
+.nav-links a:hover {
+  color: navy;
+}
+
+.nav-links a:focus-visible {
+  outline: 2px solid crimson;
+  border-radius: 4px;
+}
+
+.login-div {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid rgb(19, 188, 240);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: rgb(19, 188, 240);
+  color: white;
+}
+
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  color: teal;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links,
+  .login-div,
+  .logo {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+}

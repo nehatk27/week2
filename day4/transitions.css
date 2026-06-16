@@ -1,0 +1,112 @@
+.main-container {
+  border: 1px dashed lightblue;
+  background-color: aliceblue;
+}
+
+.box {
+  min-height: 150px;
+  width: 50%;
+  border: 1px solid black;
+  margin: 30px;
+  background-color: rgb(161, 182, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  transition: width 1.5s;
+}
+
+.box:hover {
+  width: 75%;
+}
+
+#linear:hover {
+  transition-timing-function: linear;
+}
+
+#ease:hover {
+  transition-timing-function: ease;
+}
+
+#ease-in:hover {
+  transition-timing-function: ease-in;
+}
+
+#ease-out:hover {
+  transition-timing-function: ease-out;
+}
+
+#ease-in-out:hover {
+  transition-timing-function: ease-in-out;
+}
+
+.clickme-button {
+  margin-top: 30px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s cubic-bezier(1, 0.51, 0, 0.84);
+}
+
+.clickme-button p {
+  font-size: larger;
+}
+
+.clickme-button:hover {
+  color: brown;
+  width: 300px;
+}
+
+.card {
+  margin-top: 30px;
+  background-color: lightcoral;
+  width: 500px;
+  margin: 50px;
+  padding: 50px;
+  transition: all 1s ease;
+}
+
+.card h2 {
+  transition: all 1s ease 0ms;
+}
+
+.card p {
+  transition: all 1s ease 50ms;
+}
+
+.card button {
+  transition: all 1s ease 100ms;
+  width: 50px;
+  height: 35px;
+}
+
+.card:hover h2,
+.card:hover p,
+.card:hover button {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  background-color: rgb(243, 178, 178);
+}
+
+.outline-transition {
+  margin-top: 30px;
+  background-color: rgb(201, 198, 198);
+  width: 500px;
+  margin: 70px;
+  padding: 20px;
+
+  outline: 2px solid #654784;
+  border: 2px solid #654784;
+  outline-offset: -6px;
+  transition: all 1s ease;
+}
+
+.outline-transition:focus,
+.outline-transition:hover {
+  outline-offset: -8px;
+}

@@ -1,0 +1,81 @@
+.container {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: rgb(255, 212, 212);
+  border: 1px solid rgb(80, 65, 65);
+  margin: 10px;
+}
+
+#main-div1 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+}
+
+#main-div2 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(7, 10%);
+}
+
+#main-div3 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+#main-div4 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+}
+
+#main-div5 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(7, minmax(200px, 1fr));
+}
+
+#main-div6 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#main-div7 {
+  background-color: ghostwhite;
+  border: 1px dashed rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#main-div8 {
+  background-color: rgb(255, 239, 239);
+  border: 1px dashed rgb(187, 106, 106);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#main-div9 {
+  background-color: rgb(255, 239, 239);
+  border: 1px dashed rgb(187, 106, 106);
+  display: grid;
+  grid-auto-rows: minmax(100px, auto) minmax(200px, auto);
+}
+
+#main-div10 {
+  background-color: rgb(255, 239, 239);
+  border: 1px dashed rgb(187, 106, 106);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+  /* Shorthand alternative: row-gap first, column-gap second */
+  /* gap: 20px 10px; */
+}

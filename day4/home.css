@@ -1,0 +1,116 @@
+:root {
+  --color-primary: #112d4e;
+  --color-bg: #f9f7f7;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: var(--color-bg);
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #112d4e;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #f9f7f7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #3f72af;
+}
+
+.cormorant-garamond-900 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.cormorant-garamond-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.feature-div {
+  display: inline-block;
+  background-color: #dbe2ef;
+  padding: 15px;
+  margin: 10px 20px;
+}
+
+.testimonial-div {
+  display: block;
+  text-align: left;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 200px;
+  border-left: 15px solid #112d4e;
+  background-image: linear-gradient(to right, #dbe2ef, #3f72af);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+  }
+
+  :root {
+    --color-primary: #f9f7f7;
+    --color-bg: #112d4e;
+  }
+
+  ul {
+    background-color: #dbe2ef;
+  }
+
+  ul li a {
+    color: #112d4e;
+  }
+
+  ul li a:hover {
+    background-color: #3f72af;
+  }
+
+  .feature-div {
+    background-color: #3f72af;
+  }
+
+  .testimonial-div {
+    border-left: 15px solid #f9f7f7;
+    background-image: linear-gradient(to right, #173961, #3f72af);
+  }
+}

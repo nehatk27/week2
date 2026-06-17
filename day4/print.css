@@ -1,0 +1,14 @@
+@media print {
+  header nav {
+    display: none !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+  }
+
+  h1, h2 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+}

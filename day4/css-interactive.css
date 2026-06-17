@@ -1,0 +1,110 @@
+.accordian {
+  width: 500px;
+}
+
+.accordian label {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordian-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 10px;
+  border: 1px solid transparent;
+}
+
+#accoridan-checkbox:checked ~ .accordian-content {
+  max-height: 300px;
+  opacity: 1;
+  padding: 10px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+/* -----2----- */
+
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  font-size: larger;
+  background-color: rgb(155, 196, 196);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(71, 141, 141);
+}
+
+.tabs p {
+  display: none;
+}
+
+input[id="radio-1"]:checked ~ p {
+  display: block;
+  font-size: 25px;
+  background-color: cornsilk;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+}
+
+input[id="radio-2"]:checked ~ p {
+  display: block;
+  font-size: 25px;
+  background-color: cornsilk;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+}
+
+input[id="radio-3"]:checked ~ p {
+  display: block;
+  font-size: 25px;
+  background-color: cornsilk;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+}
+
+input[id="radio-4"]:checked ~ p {
+  display: block;
+  font-size: 25px;
+  background-color: cornsilk;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+}
+
+/* -----3---------- */
+
+.rating {
+  margin-top: 30px;
+  background-color: ghostwhite;
+  padding: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.rating label::before {
+  content: "☆";
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+input[name="rate"]:checked ~ label::before {
+  content: "★";
+  color: rgb(228, 203, 65);
+}

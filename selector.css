@@ -2,12 +2,11 @@ li:nth-child(even) {
   color: aqua;
 }
 
-.emails {
+input[type="email"] {
   color: green;
 }
 
-.card,
-.featured {
+.card.featured {
   color: rgb(214, 121, 0);
 }
 

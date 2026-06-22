@@ -1,0 +1,58 @@
+li:nth-child(even) {
+  color: aqua;
+}
+
+input[type="email"] {
+  color: green;
+}
+
+.card.featured {
+  color: rgb(214, 121, 0);
+}
+
+article > p:first-of-type {
+  color: blueviolet;
+}
+
+p + h2 {
+  color: brown;
+}
+
+p:hover {
+  font-size: larger;
+}
+
+button:focus {
+  font-size: 30px;
+}
+
+article:first-child {
+  color: rgb(243, 41, 84);
+}
+
+li:first-child {
+  background-color: bisque;
+}
+
+li:last-child {
+  padding-left: 30px;
+}
+
+/* last nth child will be used if conflicts appears. Others will be overriden */
+li:nth-child(3n + 1) {
+  color: rgb(243, 41, 84);
+}
+
+div p::before {
+  content: "'Prefix'  ";
+  color: rgb(124, 124, 121);
+}
+div p::after {
+  content: "  'Postfix'";
+  color: rgb(124, 124, 121);
+}
+
+[href^="https"] {
+  background-color: rgb(194, 182, 113);
+  padding: 5px;
+}

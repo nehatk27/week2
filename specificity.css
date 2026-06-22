@@ -1,0 +1,70 @@
+/* specificity: (0,0,0,0) */
+* {
+  color: black;
+}
+
+/* specificity: (0,0,0,1) */
+p {
+  color: hotpink;
+}
+
+/* specificity: (0,0,1,0) */
+.para {
+  color: yellowgreen;
+}
+
+/* specificity: (0,1,0,0) */
+#second-para {
+  color: turquoise;
+}
+
+/* specificity: (0,0,0,2) */
+div > p {
+  color: blue;
+}
+
+/* specificity: (0,0,0,2) */
+div p {
+  color: slateblue;
+}
+
+/* specificity: (0,0,1,1) */
+p:hover {
+  color: black;
+}
+
+/* specificity: (0,0,1,1) */
+p:active {
+  color: red;
+}
+
+/* specificity: (0,0,1,1) */
+p:first-child {
+  color: tomato;
+}
+
+/* specificity: (0,0,1,1) */
+p:nth-child(3n + 2),
+p:nth-child(4n + 2) {
+  color: blueviolet;
+}
+
+/* specificity: (0,0,0,2) */
+p::first-letter {
+  color: rgb(148, 35, 110);
+}
+
+/* specificity: (0,0,0,2) */
+p::selection {
+  color: chartreuse;
+}
+
+/* specificity: (0,0,1,0) */
+[id="fifth-para"] {
+  color: chocolate;
+}
+
+/* specificity: (1,0,0,0,0) */
+.imp-para {
+  color: saddlebrown !important;
+}

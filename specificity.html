@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity Task</title>
+    <link rel="stylesheet" href="specificity.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Specificity</h1>
+
+      <div>
+        <p class="para">This is paragraph 1 inside first div</p>
+        <!-- for inline stling, specificity: (1,0,0,0) -->
+        <p class="para" id="second-para" style="color: teal">
+          This is paragraph 2 inside first div
+        </p>
+        <p class="para">This is paragraph 3 inside first div</p>
+        <p>This is paragraph 4 inside first div</p>
+        <p id="fifth-para">This is paragraph 5 inside first div</p>
+        <p class="para imp-para">This is paragraph 6 inside first div</p>
+      </div>
+
+      <!-- 
+      PREDICTIONS:
+      paragraph 1: div > p (blue) may take over.
+      paragraph 2: inline styling has higher priority. So steal color for paragraph 2.
+      paragraph 3: div > p (blue) may take over because it has a higher specificity than a single class and also take over 'div p' by being lower in the file.
+      paragraph 4: div > p (blue) may take over because it wins the source-order tiebreaker against 'div p'.
+      paragraph 5: p:nth-child(3n + 2) (blueviolet) may take over because pseudo-classes have high priority than attribute selectors.
+      paragraph 6: .imp-para (saddlebrown) may take over because the !important rule breaks all others.
+
+      CORRECTION:
+      One was wrong, and corrected rule:
+     Prediction for paragraph 1 was wrong because the pseudo-class 'p:first-child' actually have a higher specificity score of (0,0,1,1) compared to others.
+    --></main>
+  </body>
+</html>

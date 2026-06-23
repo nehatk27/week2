@@ -20,7 +20,7 @@
   --color-shade-five: #000303;
 
   --color-primary-rgb: rgb(0, 55, 71);
-  --color-primary-hsl: hsl(194°, 100%, 14%);
+  --color-primary-hsl: hsl(194deg, 100%, 14%);
   --color-primary-oklch: oklch(0.3129 0.0588 224.05);
 }
 

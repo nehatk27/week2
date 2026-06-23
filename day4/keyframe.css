@@ -1,0 +1,154 @@
+body {
+  background: #fff2f2;
+}
+
+.spinner {
+  margin: 50px auto;
+  width: 200px;
+  height: 200px;
+  border: 20px solid yellowgreen;
+  border-top: 20px solid green;
+  border-radius: 50%;
+}
+
+/* ----skeleton-loading--- */
+
+.skeleton-card {
+  width: 320px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 10px auto;
+}
+
+.skeleton {
+  background-image: linear-gradient(
+    90deg,
+    #e2e8f0 0%,
+    #cbd5e1 50%,
+    #e2e8f0 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  border-radius: 4px;
+}
+
+.skeleton-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-title {
+  width: 70%;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 12px;
+}
+
+.skeleton-short {
+  width: 50%;
+}
+
+/* ----card entry animation--------- */
+.card {
+  width: 320px;
+  padding: 16px;
+  background: #af9b9b;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------notification---------- */
+
+.notification {
+  width: 200px;
+  height: 50px;
+  padding: 16px;
+  margin: 20px auto;
+  background-color: #af9b9b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+#bell {
+  width: 25px;
+  height: auto;
+}
+
+/* --------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinner {
+    animation: spin-clockwise 1s linear infinite;
+  }
+
+  @keyframes spin-clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .skeleton {
+    animation: shimmer-alternate 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes shimmer-alternate {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0% 0;
+    }
+  }
+
+  .card {
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
+  }
+
+  .notification:hover #bell {
+    animation: shake 0.7s linear infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(60deg);
+    }
+
+    50% {
+      transform: rotate(-60deg);
+    }
+
+    100% {
+      transform: rotate(60deg);
+    }
+  }
+}

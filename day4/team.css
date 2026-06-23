@@ -1,0 +1,92 @@
+figure img {
+  border-radius: 50%;
+  width: 180px;
+  border: 1px solid #fd8d9c;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.icon {
+  color: black;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+figure {
+  background-color: #fffaf3;
+  padding: 20px;
+  border-radius: 4.5rem 0 1.5rem 0;
+  border: 1px solid #fd8d9c;
+
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+figure:hover {
+  box-shadow: 0 20px 20px #fcb8c1;
+  transform: translateY(-5px);
+}
+
+figure:hover .socials {
+  animation: changeOpacity 0.7s ease-in-out forwards;
+}
+
+@keyframes changeOpacity {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#filter-dev:target ~ .content-grid .card:not(.dev) {
+  display: none;
+}
+
+#filter-operations:target ~ .content-grid .card:not(.operations) {
+  display: none;
+}
+
+.filter-controls a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background: #eee;
+  color: #333;
+  border-radius: 4px;
+}

@@ -1,0 +1,35 @@
+.accordian {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.accordian-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordian-button:focus {
+  outline: 2px solid #0066cc;
+  background-color: #f0f7ff;
+}
+
+.accordian p {
+  margin: 0;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility.</title>
+    <link rel="stylesheet" href="accordian.css" />
+  </head>
+  <body>
+    <main>
+      <div class="accordian">
+        <button
+          class="accordian-button"
+          aria-expanded="false"
+          aria-controls="panel-1"
+        >
+          Content 1: &#9660;
+        </button>
+        <p class="hidden" id="panel-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+
+        <button
+          class="accordian-button"
+          aria-expanded="false"
+          aria-controls="panel-2"
+        >
+          Content 2: &#9660;
+        </button>
+        <p class="hidden" id="panel-2">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <button
+          class="accordian-button"
+          aria-expanded="false"
+          aria-controls="panel-3"
+        >
+          Content 3: &#9660;
+        </button>
+        <p class="hidden" id="panel-3">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </main>
+    <script src="accordian.js"></script>
+  </body>
+</html>

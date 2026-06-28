@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Payment Checkout Form</h1>
+    </header>
+    <main>
+      <form action="/" method="post" class="form-container" id="checkout-form">
+        <fieldset>
+          <legend>Delivery Address:</legend>
+
+          <div class="form-row">
+            <div class="name-row">
+              <label for="first-name">Enter your first name:*</label>
+              <input type="text" name="first-name" id="first-name" required />
+
+              <label for="last-name">Enter your last name:*</label>
+              <input type="text" name="last-name" id="last-name" required />
+
+              <span class="error-message">Please fill the name.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="address">Address Lane 1*</label>
+            <input type="text" id="address" name="address" required />
+            <span class="error-message">Please fill address.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="address2">Address Lane 2</label>
+            <input type="text" id="address2" name="address2" />
+          </div>
+
+          <div class="form-row">
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required />
+            <span class="error-message">Please fill city.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="zip">Postal Code*</label>
+            <input type="text" id="zip" name="zip" required />
+            <span class="error-message">Please fill postal code.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="country">Country*</label>
+            <input list="countries" name="country" id="country" required />
+
+            <select name="countries" id="countries">
+              <option value="" disabled selected></option>
+              <option value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Japan">Japan</option>
+              <option value="China">China</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Austria">Austria</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Iran">Iran</option>
+              <option value="Germany">Germany</option>
+              <option value="Congo">Congo</option>
+              <option value="US">US</option>
+              <option value="Norway">Norway</option>
+              <option value="Italy">Italy</option>
+              <option value="Australia">Australia</option>
+              <option value="Romania">Romania</option>
+              <option value="Chile">Chile</option>
+            </select>
+            <span class="error-message">Please fill the country name.</span>
+          </div>
+
+          <small>'Fields marked * are required'​</small>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Details</legend>
+
+          <div class="form-row">
+            <label for="card-number">Card-number:*</label>
+            <input
+              type="number"
+              name="card-number"
+              id="card-number"
+              maxlength="16"
+              required
+            />
+            <span class="error-message">Please fill the card no.</span>
+          </div>
+          <div class="form-row">
+            <div class="name-row">
+              <label for="month">Expiry Month*</label>
+              <input list="months" name="month" id="month" required />
+
+              <select name="months" id="months">
+                <option value="" disabled selected></option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+
+              <label for="year">Year:*</label>
+              <input type="number" name="year" id="year" required />
+            </div>
+            <span class="error-message"
+              >Please fill the expiry year and month.</span
+            >
+          </div>
+          <div class="form-row">
+            <label for="cvv">Card-Verification-Value*</label>
+            <input
+              type="password"
+              name="cvv"
+              id="cvv"
+              required
+              maxlength="4"
+              aria-describedby="cvv-helper"
+            />
+            <span class="error-message">Please fill the country name.</span>
+          </div>
+          <p id="cvv-helper" role="tooltip">
+            '3 or 4 digits on the back​ ​of your card'​
+          </p>
+
+          <small>'Fields marked * are required'</small>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Notes</legend>
+          <div class="form-row">
+            <label for="notes">Order Notes here(optional):</label><br />
+            <textarea name="notes" id="notes" maxlength="500"></textarea><br />
+          </div>
+          <small>'Fields marked * are required'</small>
+        </fieldset>
+
+        <br /><br />
+
+        <div class="buttons">
+          <button type="reset">Cancel/Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+fieldset {
+  width: 100%;
+  border: 1px solid #4b4b4b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(255, 244, 231);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.form-row label {
+  flex: 0 0 180px;
+  font-weight: 500;
+}
+
+.form-row input,
+textarea {
+  flex: 1;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+legend {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.name-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.name-row [for="last-name"] {
+  margin-left: 20px;
+}
+
+.name-row [for="year"] {
+  margin-left: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  size: 40px;
+  padding: 10px;
+  font-size: larger;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button[type="reset"]:hover {
+  color: red;
+}
+
+button[type="submit"]:hover {
+  color: green;
+}
+
+input:focus {
+  border: 3px solid #e07cd8;
+  outline: none;
+}
+
+input:user-invalid {
+  border: 3px solid #a82a2a;
+  outline: none;
+}
+
+.error-message {
+  display: none;
+  color: #a53641;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+
+
+input:user-invalid,
+select:user-invalid {
+  border: 3px solid #a82a2a;
+  background-color: #fff8f8;
+  outline: none;
+}
+
+input:user-invalid ~ .error-message,
+select:user-invalid ~ .error-message {
+  display: block;
+}
+
+
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-row label {
+    flex: none;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .form-row input {
+    width: 100%;
+  }
+}

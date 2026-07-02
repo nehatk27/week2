@@ -1,0 +1,184 @@
+body{
+  background-color: rgb(240, 240, 230);
+}
+
+
+
+footer {
+  background-color: antiquewhite;
+}
+
+.four-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgb(170, 170, 170);
+}
+
+.four-column a {
+  text-decoration: none;
+  font-size: larger;
+  color: teal;
+}
+
+.four-column a:hover {
+  color: rgb(2, 59, 59);
+  font-size: x-large;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-style: oblique;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 0 70px;
+  align-items: center;
+}
+
+.two-column:hover,
+.four-column:hover {
+  box-shadow: 0px 2px 5px 2px black;
+}
+
+.two-column a {
+  text-decoration: none;
+  font-style: oblique;
+  color: cadetblue;
+}
+
+.two-column a:hover {
+  color: rgb(24, 72, 73);
+}
+
+/* -------nav-------- */
+nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid rgb(0, 0, 0);
+  flex: 1;
+  padding: 0;
+  height: 100%;
+}
+
+nav li {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid blue;
+  font-size: larger;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: teal;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+}
+
+nav a {
+  color: whitesmoke;
+}
+
+nav a:hover {
+  color: rgb(10, 8, 39);
+}
+
+
+
+
+/* ---------history----------- */
+#history{
+  background-color: rgb(211, 209, 207);
+  padding: 10px;
+border-radius: 15px;
+margin: 20px;
+}
+
+#history h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#history dl{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+
+
+.list-div{
+  display:flex ;
+  flex-direction: row;
+}
+
+
+
+#history dt{
+  display: flex;
+    font-size: large;
+   flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 10px;
+  
+}
+
+
+#history dd{
+    display: flex;
+    font-size: large;
+   flex-grow: 1; 
+  margin: 0;
+}
+
+
+/* -----mission------- */
+
+#mission{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid grey;
+  border-radius: 10px;
+  margin: 0 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------values---------- */
+#values{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#values article{
+  margin: 2px 10px;
+  background-color: rgb(222, 235, 230);
+  padding: 10px;
+}
+
